@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade dia 25/08/25</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="container">
+            <div id="cabecalho">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#cabecalho">Início</a></li>
+                        <li><a href="#cyber">Cyber Punk</a></li>
+                        <li><a href="#elder">Elder Ring</a></li>
+                        <li><a href="#forza">Forza Horizon 5</a></li>
+                        <li><a href="#god">God Of War</a></li>
+                        <li><a href="#witcher">The Witcher 3: Wild Hunt</a></li>
+                        <li><a href="#rodape">Contatos</a></li>
+                    </ul>
+                </div>               
+            </div>
+        </header>
+        <main>
+            <section id="jogos">
+                <div class="sticky-bar">
+                    <h2>Jogos</h2>
+                </div>
+                <div id="cyber" class="game-info">
+                    <img src="imagens/cyber.jpeg" alt="Cyberpunk 2077">
+                    <h3>Cyberpunk 2077</h3>
+                    <p>Cyberpunk 2077 é um RPG de ação em mundo aberto desenvolvido pela CD Projekt Red. Situado na futurística Night City, o jogo oferece uma narrativa rica e escolhas que impactam o desenrolar da história.</p>
+                    <span class="tooltip">Clique aqui para mais informações!</span>
+                </div>
+                <div id="elder" class="game-info">
+                    <img src="imagens/elder.jpeg" alt="Elden Ring">
+                    <h3>Elden Ring</h3>
+                    <p>Elden Ring é um RPG de ação desenvolvido pela FromSoftware e publicado pela Bandai Namco. Com um vasto mundo aberto, o jogo combina exploração, combate desafiador e uma narrativa envolvente criada em colaboração com George R.R. Martin.</p>
+                    <span class="tooltip">Clique aqui para mais informações!</span>
+                </div>
+                <div id="forza" class="game-info">
+                    <img src="imagens/forza.jpeg" alt="Forza Horizon 5">
+                    <h3>Forza Horizon 5</h3>
+                    <p>Forza Horizon 5 é um jogo de corrida em mundo aberto desenvolvido pela Playground Games. Ambientado no México, o jogo oferece uma vasta seleção de carros, eventos dinâmicos e um ambiente vibrante para explorar.</p>
+                    <span class="tooltip">Clique aqui para mais informações!</span>
+                </div>
+                <div id="god" class="game-info">
+                    <img src="imagens/god.jpeg" alt="God of War">
+                    <h3>God of War</h3>
+                    <p>God of War é um jogo de ação e aventura desenvolvido pela Santa Monica Studio. A série segue Kratos, um guerreiro espartano, em sua jornada através da mitologia grega e nórdica, combinando combates intensos com uma narrativa profunda.</p>
+                    <span class="tooltip">Clique aqui para mais informações!</span>
+                </div>
+                <div id="witcher" class="game-info">
+                    <img src="imagens/witcher.jpeg" alt="The Witcher 3: Wild Hunt">
+                    <h3>The Witcher 3: Wild Hunt</h3>
+                    <p>The Witcher 3: Wild Hunt é um RPG de ação desenvolvido pela CD Projekt Red. O jogo segue Geralt de Rívia, um caçador de
+                    monstros, em uma jornada épica por um mundo aberto repleto de missões, personagens complexos e escolhas morais.</p>
+                    <span class="tooltip">Clique aqui para mais informações!</span>
+                </div>
+            </section>
+        </main>
+        <footer id="rodape">
+            <div class="container">
+                <div class="contatos">
+                    <a href="https://github.com/igorepping19" target="_blank">
+                        <img src="imagens/github-icon.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.instagram.com/igorepping/" target="_blank">
+                        <img src="imagens/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="www.linkedin.com/in/igor-epping-526a89247" target="_blank">
+                        <img src="imagens/linkedin-icon.png" alt="Linkedin">
+                    </a>
+                    <a href="https://wa.me/5549991897796" target="_blank">
+                        <img src="imagens/whatsapp-icon.png" alt="Whatsapp">
+                    </a>
+                </div>
+                <div class="informacoes">
+                <p>Email: igorepping1@gmail.com</p>
+                <p>&copy; 2024 Igor Epping. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button id="back-to-top">
+    &#8593; </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+        
+            // Mostra ou esconde o botão com base na posição da rolagem
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) { 
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+        
+            // Rola a página para o topo quando o botão é clicado
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
