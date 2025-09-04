@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-.container {
+.container #jogos{
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
@@ -15,7 +15,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; /* Alinha o conteúdo ao centro do cabeçalho */
     height: 50px;
     border-bottom: 1px solid #ccc; /* Adiciona uma linha para separar o cabeçalho do restante da página */
@@ -83,16 +83,6 @@ main {
     padding: 20px 0;
 }
 
-#jogos div {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-
 #jogos img {
     width: 300px;
     height: 300px;
@@ -110,6 +100,32 @@ main {
     font-size: 1rem;
     line-height: 1.6;
     flex-grow: 1;
+}
+
+#jogos .download {
+    margin-top: 10px;
+    text-align: center; /* Centraliza o botão */
+}
+
+#jogos .download button{
+    background-color: #34495e; /* Fundo escuro */
+    color: #ccc;
+    padding: 5px 20px; /* Espaço interno */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave na cor */
+    align-items: center;
+}
+#jogos .download button:hover {
+    background-color: #5d81a5; /* Cor mais clara no hover */
+}
+
+#jogos .conteudo {
+    display: flex;
+    flex-direction: horizontal;
+    gap: 10px; /* Espaço entre os elementos */
+    padding: 10px;
+    flex-grow: 1; /* Faz o conteúdo crescer para ocupar o espaço disponível */
 }
 
 .game-info {
@@ -138,9 +154,16 @@ main {
 footer {
     background-color: #34495e;
     color: white;
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
     margin-top: 15px;
+}
+
+footer .container {
+    display: flex; /* <-- Este comando coloca os itens LADO A LADO */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 20px; /* Adiciona espaço entre cada item */
 }
 
 .game-info:hover .tooltip {
