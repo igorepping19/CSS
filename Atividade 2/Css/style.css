@@ -1,3 +1,49 @@
 body {
-    background-color: rgb(90, 206, 142);
+    background-color: rgb(196, 224, 209);
+}
+
+h1 {
+    color:blue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    animation-name: logoLoja;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logoLoja {
+    0% { color: blue; }
+    25% { color: rgb(233, 98, 98); }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: blue; }
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container #botoes ul li a{
+    text-decoration: none;
+    color: wheat;
+    background-color: rgb(44, 41, 41);
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.container #botoes ul li a:hover{
+    background-color: rgb(96, 92, 92);
+}
+
+
+#botoes ul li{
+    text-decoration: none;
 }
