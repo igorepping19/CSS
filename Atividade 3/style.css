@@ -1,0 +1,85 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: azure;
+}
+
+h1 {
+    color: rgb(5, 5, 7);
+    text-align: center;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+    animation-name: colorMenu;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorMenu {
+    0% {background-color: black;}
+    25% {background-color: rgb(96, 92, 92);}
+    50% {color: black; background-color: white;}
+    75% {background-color: rgb(96, 92, 92);}
+    100% {background-color: black;}
+}
+
+h2 {
+    text-align: left;
+    color: rgb(5, 5, 7);
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    height: 50px;
+    gap: 15px;
+}
+
+.conteudo button{
+    color: black;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    animation-name: botaoTreino;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes botaoTreino {
+    0% {background-color: white;}
+    20% {background-color: rgb(255, 105, 97);}
+    40% {background-color: rgb(255, 0, 0);}
+    60% {background-color: rgb(255, 105, 97);}
+    80% {background-color: rgb(216, 156, 156);}
+    100% {background-color: white}
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+
